@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: mcp-library
+    env: node
+    rootDir: mcp-servers/library
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
+
+  - type: web
+    name: mcp-cafeteria
+    env: node
+    rootDir: mcp-servers/cafeteria
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
+
+  - type: web
+    name: mcp-events
+    env: node
+    rootDir: mcp-servers/events
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
+
+  - type: web
+    name: mcp-academics
+    env: node
+    rootDir: mcp-servers/academics
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
